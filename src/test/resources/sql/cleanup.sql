@@ -1,0 +1,20 @@
+-- 集成测试用：每个测试方法执行前清空业务表（严格遵守外键依赖顺序）
+DELETE FROM event_media;
+DELETE FROM life_stage_media;
+DELETE FROM knowledge_note_media;
+DELETE FROM diary_media;
+DELETE FROM study_record_tag;
+DELETE FROM knowledge_note_tag;
+DELETE FROM diary_tag;
+DELETE FROM important_event_tag;
+DELETE FROM media_tag;
+DELETE FROM study_record;
+DELETE FROM important_event;
+DELETE FROM diary;
+DELETE FROM knowledge_note;
+DELETE FROM knowledge_category;
+DELETE FROM life_stage;
+DELETE FROM year_profile;
+DELETE FROM media_file;
+DELETE FROM tag;
+DELETE FROM t_user;

@@ -1,0 +1,20 @@
+# 本地开发环境
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/${DB_NAME:mylife}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:1234}
+
+server:
+  servlet:
+    session:
+      cookie:
+        secure: false
+
+logging:
+  level:
+    root: INFO
+    # 打开后 MyBatis 的 SQL 会以 DEBUG 级别输出到控制台
+    cn.mengw21.mylife: DEBUG
+    org.springframework.security: INFO

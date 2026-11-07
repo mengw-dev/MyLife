@@ -1,0 +1,22 @@
+# 生产环境 — 敏感项全部由环境变量注入，不提供默认值
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT:3306}/${DB_NAME}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+server:
+  servlet:
+    session:
+      cookie:
+        # 生产必须走 HTTPS，否则 Cookie 不会被浏览器发送
+        secure: true
+
+logging:
+  level:
+    root: INFO
+    cn.mengw21.mylife: INFO
+    org.springframework.security: WARN
+  file:
+    name: logs/mylife.log

@@ -1,0 +1,13 @@
+# 集成测试环境
+# 使用本机 MySQL 的独立测试库 mylife_test，不碰开发库 mylife 的数据。
+# 库不存在时由 JDBC 参数自动创建；Flyway 会在测试库上执行迁移建表。
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mylife_test?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+
+# 测试媒体文件落到 target/test-uploads，随测试清理，不污染工作目录
+mylife:
+  upload-dir: target/test-uploads

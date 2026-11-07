@@ -1,0 +1,29 @@
+# Spring Boot
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Build
+build/
+*.class
+
+# Logs
+*.log
+logs/
+
+# Runtime
+uploads/
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE 分享缓存
+.trae-html-share-packages/
