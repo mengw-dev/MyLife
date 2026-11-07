@@ -19,9 +19,7 @@ Java 21 · Spring Boot 3 · Spring Security 6 · MyBatis-Plus · MySQL 8 · Flyw
 mvnw.cmd spring-boot:run   # Windows；Linux/macOS 使用 ./mvnw spring-boot:run
 ```
 
-- 应用：http://localhost:8080
-- 接口文档：http://localhost:8080/swagger-ui.html
-- 数据库连接通过 `DB_USERNAME` / `DB_PASSWORD` 环境变量配置，表结构由 Flyway 自动迁移
+启动成功后在本机浏览器访问应用即可，默认端口 `8080`，接口文档（Swagger）位于 `/swagger-ui.html`。数据库连接通过 `DB_USERNAME` / `DB_PASSWORD` 环境变量配置，表结构由 Flyway 自动迁移。
 
 ## 测试
 
