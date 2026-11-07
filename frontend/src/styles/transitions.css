@@ -1,0 +1,40 @@
+/* 路由与时间线层级过渡（180~280ms，方向感见视图内的 mode/direction 配置） */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--dur) ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 时间线纵深：进入“向内深入”，返回“向外展开” */
+.zoom-in-enter-active {
+  transition: all var(--dur) var(--ease);
+}
+.zoom-in-leave-active {
+  transition: all var(--dur) var(--ease);
+}
+.zoom-in-enter-from {
+  opacity: 0;
+  transform: translateX(28px) scale(0.985);
+}
+.zoom-in-leave-to {
+  opacity: 0;
+  transform: translateX(-28px) scale(0.985);
+}
+
+.zoom-out-enter-active {
+  transition: all var(--dur) var(--ease);
+}
+.zoom-out-leave-active {
+  transition: all var(--dur) var(--ease);
+}
+.zoom-out-enter-from {
+  opacity: 0;
+  transform: translateX(-28px) scale(0.985);
+}
+.zoom-out-leave-to {
+  opacity: 0;
+  transform: translateX(28px) scale(0.985);
+}

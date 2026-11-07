@@ -1,0 +1,68 @@
+/* MyLife 设计令牌 —— 「个人数字档案馆」风格：暖白纸感、低饱和、轻边界 */
+:root {
+  /* 色板 */
+  --bg: #faf8f3;            /* 页面底色：暖白 */
+  --bg-soft: #f3efe7;       /* 次级底色 */
+  --surface: #ffffff;       /* 卡片表面 */
+  --ink: #2d2b26;           /* 主文字：近黑暖灰 */
+  --ink-2: #57534a;         /* 次级文字 */
+  --muted: #8d877b;         /* 辅助文字 */
+  --line: #e6e0d3;          /* 轻边界 */
+  --line-strong: #d6cfbe;   /* 强调边界 */
+
+  --accent: #7d6b4f;        /* 强调：暖棕 */
+  --accent-deep: #63543c;   /* 强调深 */
+  --accent-soft: #ede5d6;   /* 强调浅底 */
+  --accent-green: #5f7a5e;  /* 次级强调：低饱和绿 */
+  --accent-blue: #5b7590;   /* 次级强调：低饱和蓝 */
+
+  --danger: #a4554a;
+  --warning: #a97e3f;
+
+  /* 语义色（时间线标记） */
+  --mark-diary: #7d6b4f;
+  --mark-study: #5f7a5e;
+  --mark-event: #b06a4e;
+
+  /* 字体 */
+  --font-sans: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  --font-serif: Georgia, 'Nimbus Roman', 'Songti SC', 'SimSun', serif;
+
+  /* 尺寸 */
+  --radius: 8px;
+  --radius-card: 12px;
+  --shadow-card: 0 1px 3px rgba(80, 68, 46, 0.06), 0 4px 14px rgba(80, 68, 46, 0.05);
+  --shadow-panel: 0 2px 6px rgba(80, 68, 46, 0.07);
+
+  --sidebar-w: 212px;
+  --preview-w: 320px;
+
+  /* 动效 */
+  --dur: 220ms;
+  --ease: cubic-bezier(0.25, 0.6, 0.3, 1);
+
+  /* Element Plus 主题覆写 */
+  --el-color-primary: #7d6b4f;
+  --el-color-primary-light-3: #9c8c70;
+  --el-color-primary-light-5: #b5a88f;
+  --el-color-primary-light-7: #d0c7b4;
+  --el-color-primary-light-8: #ded7c8;
+  --el-color-primary-light-9: #ece7dc;
+  --el-color-primary-dark-2: #63543c;
+  --el-border-radius-base: 6px;
+  --el-border-color: #e6e0d3;
+  --el-border-color-lighter: #ece7dc;
+  --el-text-color-primary: #2d2b26;
+  --el-text-color-regular: #57534a;
+  --el-text-color-secondary: #8d877b;
+  --el-bg-color: #ffffff;
+  --el-fill-color-light: #f6f2ea;
+}
+
+:root[data-widget-theme='dark'] {
+  --bg: #1e1d1a;
+  --surface: #262420;
+  --ink: #e8e4da;
+  --muted: #8d877b;
+  --line: #3a3730;
+}
