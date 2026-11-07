@@ -35,7 +35,7 @@
       <h1>MyLife 项目基线文档</h1>
       <p class="lede">
         一个以<span class="hero-core">人生时间线</span>为核心的个人成长记录系统。
-        这四份文档是产品、前端、后端与 AI 协作共同遵守的契约：<strong>需求、接口、数据、规范</strong>层层对齐，
+        这四份文档是产品、前端、后端与团队协作共同遵守的契约：<strong>需求、接口、数据、规范</strong>层层对齐，
         任何一方都不得擅自偏离基线。
       </p>
       <div class="meta">
@@ -73,7 +73,7 @@
       <a class="card" href="04-standards.html">
         <span class="card-num">Doc 04</span>
         <h3>项目开发规范</h3>
-        <p>分层职责与命名规范、Spring Security 与数据隔离、测试与 Git 规范、Agent 协作流程。</p>
+        <p>分层职责与命名规范、Spring Security 与数据隔离、测试与 Git 规范、模块协作流程。</p>
         <span class="chip">Controller → Service → Mapper</span>
         <div style="margin-top:.7rem"><span class="card-go">阅读全文 →</span></div>
       </a>
@@ -86,7 +86,7 @@
     </div>
 
     <h2>推荐的开发顺序</h2>
-    <p>严格按照以下顺序推进：先由人对文档把关，再由 Agent 生成基础设施与 CRUD，核心业务由你亲自开发、逐层理解。</p>
+    <p>严格按照以下顺序推进：先评审文档，再生成基础设施与 CRUD，核心业务逐步开发、逐层理解。</p>
     <figure class="diagram">
       <pre class="mermaid">
 flowchart LR
@@ -94,11 +94,11 @@ flowchart LR
   B --> C[3. 生成 OpenAPI<br/>Swagger 配置]
   C --> D[4. 整改现有<br/>基础框架]
   D --> E[5. 生成阶段<br/>日记 CRUD]
-  E --> F[6. 你阅读<br/>运行理解代码]
+  E --> F[6. 阅读运行<br/>理解代码]
   F --> G[7. 生成知识库<br/>等 CRUD]
-  G --> H[8. 自己开发时间线<br/>搜索、导出等核心业务]
+  G --> H[8. 开发时间线<br/>搜索、导出等核心业务]
       </pre>
-      <figcaption>图 1：四份文档的推荐使用顺序（你与 Agent 分工）</figcaption>
+      <figcaption>图 1：四份文档的推荐使用顺序</figcaption>
     </figure>
 
     <h2>技术栈一览</h2>
